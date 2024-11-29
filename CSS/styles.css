@@ -98,6 +98,55 @@ h2 {
     color: var(--primary-color);
     margin: 1rem;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 20px;
+}
+
+article {
+    flex: 3;
+}
+article.image-text-container {
+    flex: 0 0 70%;
+}
+
+aside.advertisement {
+    flex: 1;
+    max-width: 300px;
+}
+
+.ad-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-text-container {
+    display: flex;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.images {
+    flex: 1;
+}
+
+.tip-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
 .property-item p {
     margin: 0 1rem 1rem;
@@ -132,6 +181,38 @@ footer .container {
     margin-bottom: 30px;
 }
 
+.annons {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.annons img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.annons p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+.annons .ad-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
 .text {
     flex: 1;
     margin-right: 20px;
@@ -146,6 +227,12 @@ footer .container {
 
 .tip-image {
     width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tip-images {
+    width: 90%;
     height: auto;
     border-radius: 8px;
 }
