@@ -1,4 +1,5 @@
 :root {
+    /* Definierar globala CSS-variabler för färgtema */
     --primary-color: #3498db;
     --secondary-color: #ffffff;
     --text-color: #333333;
@@ -7,12 +8,14 @@
 }
 
 * {
+    /* Återställer marginaler och paddings för alla element */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    /* Grundläggande styling för hela sidan */
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -20,12 +23,14 @@ body {
 }
 
 header {
+    /* Styling för sidhuvudet */
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 1rem 0;
 }
 
 header .container {
+    /* Flexbox för att justera innehållet i sidhuvudet */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,16 +40,19 @@ header .container {
 }
 
 header h1 {
+    /* Titelns storlek i sidhuvudet */
     font-size: 1.8rem;
 }
 
 header ul {
+    /* Menylistans styling */
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
 header ul li a {
+    /* Styling för länkar i navigationsmenyn */
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
@@ -54,32 +62,38 @@ header ul li a {
 
 header ul li a.active,
 header ul li a:hover {
+    /* Aktiv och hover-styling för menyobjekt */
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
 main {
+    /* Marginal och padding för huvudinnehållet */
     padding: 2rem 1rem;
 }
 
 main .container {
+    /* Begränsar sidans bredd och centrerar innehållet */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 h2 {
+    /* Styling för huvudrubriker */
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
 
 .property-list {
+    /* Grid-layout för fastighetslistan */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
 .property-item {
+    /* Styling för varje fastighet */
     background-color: var(--secondary-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -88,23 +102,28 @@ h2 {
 }
 
 .property-item img {
+    /* Bildstorlek och anpassning */
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
 .property-item h3 {
+    /* Rubrik för fastighetens namn */
     font-size: 1.4rem;
     color: var(--primary-color);
     margin: 1rem;
 }
+
 .container {
+    /* Begränsar innehållets bredd */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
 .content-wrapper {
+    /* Layout för artiklar och sidoreklam */
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -112,47 +131,58 @@ h2 {
 }
 
 article {
+    /* Artiklarna tar upp majoriteten av bredden */
     flex: 3;
 }
+
 article.image-text-container {
+    /* Specifik styling för artiklar med bilder och text */
     flex: 0 0 70%;
 }
 
 aside.advertisement {
+    /* Styling för sidoreklam */
     flex: 1;
     max-width: 300px;
 }
 
 .ad-image {
+    /* Reklambildens styling */
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
 .image-text-container {
+    /* Layout för bilder och text i artiklar */
     display: flex;
     gap: 20px;
 }
 
 .text {
+    /* Styling för textdel i artiklar */
     flex: 1;
 }
 
 .images {
+    /* Styling för bilddel i artiklar */
     flex: 1;
 }
 
 .tip-image {
+    /* Specifik styling för tipsbilder */
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
 .property-item p {
+    /* Marginal för text i fastighetsobjekt */
     margin: 0 1rem 1rem;
 }
 
 footer {
+    /* Styling för sidfoten */
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
@@ -160,21 +190,25 @@ footer {
 }
 
 footer .container {
+    /* Begränsning och centrering av innehållet i sidfoten */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .text h3 {
+    /* Styling för rubriker i textblock */
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
 .text p {
+    /* Textblockets styling */
     font-size: 1.2rem;
     line-height: 1.8;
 }
 
 .image-text-container {
+    /* Styling för artiklar med bilder och text */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -182,6 +216,7 @@ footer .container {
 }
 
 .annons {
+    /* Styling för reklambox */
     display: block;
     text-align: center;
     padding: 20px;
@@ -196,6 +231,7 @@ footer .container {
 }
 
 .annons img {
+    /* Bild i reklambox */
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -203,22 +239,27 @@ footer .container {
 }
 
 .annons p {
+    /* Textstyling för reklambox */
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
 }
 
 .annons .ad-text {
+    /* Reklamboxens text */
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #333;
     margin-top: 10px;
 }
+
 .text {
+    /* Textblock styling i flex-layout */
     flex: 1;
     margin-right: 20px;
 }
 
 .images {
+    /* Bilder styling i flex-layout */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -226,18 +267,22 @@ footer .container {
 }
 
 .tip-image {
+    /* Anpassad styling för tipsbilder */
     width: 60%;
     height: auto;
     border-radius: 8px;
 }
 
 .tip-images {
+    /* Justerad storlek för vissa bilder */
     width: 90%;
     height: auto;
     border-radius: 8px;
 }
 
 @media (max-width: 768px) {
+
+    /* Responsiv layout för små skärmar */
     .image-text-container {
         flex-direction: column;
         align-items: center;
